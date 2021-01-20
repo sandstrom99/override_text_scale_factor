@@ -1,6 +1,5 @@
 name: example
 description: An example project for override_text_scale_factor package.
-author: Balder Sandstrøm
 
 version: 1.0.0+1
 
@@ -14,7 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.0
 
 dev_dependencies:
-  pedantic: ^1.9.0
+  pedantic: ^1.9.2
   flutter_test:
     sdk: flutter
   override_text_scale_factor:
