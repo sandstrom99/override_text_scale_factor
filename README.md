@@ -1,14 +1,79 @@
 # override_text_scale_factor
 
-A new Flutter package project.
+When you're too lazy to make parts of your UI respond to a non-default `textScaleFactor` 
+then `OverrideTextScaleFactor` is the widget for you.
 
-## Getting Started
+## Usage
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+Take a look at this [Example](https://github.com/sandstrom99/override_text_scale_factor/blob/master/example/lib/main.dart) Project
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```dart
+import 'package:flutter/material.dart';
+import 'package:override_text_scale_factor/override_text_scale_factor.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Override Text Scale Factor',
+      home: Scaffold(
+        body: Container(
+          width: double.infinity,
+          height: double.infinity,
+          padding: const EdgeInsets.all(32),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              OverrideTextScaleFactor(
+                child: Container(
+                  width: double.infinity,
+                  color: Colors.black12,
+                  padding: EdgeInsets.all(16),
+                  child: Text(
+                    'This text wont scale to device font scale',
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 24,
+              ),
+              OverrideTextScaleFactor(
+                textScaleFactor: 1.5,
+                child: Container(
+                  width: double.infinity,
+                  color: Colors.black26,
+                  padding: EdgeInsets.all(16),
+                  child: Text(
+                    'This text has a fixed font scale of 1.5',
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 24,
+              ),
+              Container(
+                width: double.infinity,
+                color: Colors.black38,
+                padding: EdgeInsets.all(16),
+                child: Text(
+                  'This text will scale to device font scale',
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+```

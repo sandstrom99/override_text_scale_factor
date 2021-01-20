@@ -25,8 +25,8 @@ class _MyAppState extends State<MyApp> {
                 child: Container(
                   width: double.infinity,
                   color: Colors.black12,
-                  padding: EdgeInsets.all(16),
-                  child: Text(
+                  padding: const EdgeInsets.all(16),
+                  child: const Text(
                     'This text wont scale to device font scale',
                     textAlign: TextAlign.center,
                   ),
@@ -40,8 +40,8 @@ class _MyAppState extends State<MyApp> {
                 child: Container(
                   width: double.infinity,
                   color: Colors.black26,
-                  padding: EdgeInsets.all(16),
-                  child: Text(
+                  padding: const EdgeInsets.all(16),
+                  child: const Text(
                     'This text has a fixed font scale of 1.5',
                     textAlign: TextAlign.center,
                   ),
@@ -53,8 +53,8 @@ class _MyAppState extends State<MyApp> {
               Container(
                 width: double.infinity,
                 color: Colors.black38,
-                padding: EdgeInsets.all(16),
-                child: Text(
+                padding: const EdgeInsets.all(16),
+                child: const Text(
                   'This text will scale to device font scale',
                   textAlign: TextAlign.center,
                 ),

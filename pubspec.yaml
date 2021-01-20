@@ -2,6 +2,7 @@ name: override_text_scale_factor
 description: Overrides text scale factor!.
 version: 0.0.1
 author: Balder Sandstrøm
+homepage: https://github.com/sandstrom99/override_text_scale_factor
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -12,6 +13,7 @@ dependencies:
     sdk: flutter
 
 dev_dependencies:
+  pedantic: ^1.9.0
   flutter_test:
     sdk: flutter
 
