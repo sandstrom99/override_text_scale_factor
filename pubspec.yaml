@@ -1,6 +1,6 @@
 name: override_text_scale_factor
-description: This package provides a widget for override text scale factor.
-version: 0.0.2
+description: This package provides a widget that overrides the textScaleFactor given by MediaQuery.
+version: 0.0.3
 
 homepage: https://github.com/sandstrom99/override_text_scale_factor
 
