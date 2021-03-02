@@ -6,7 +6,7 @@ When you're too lazy to make parts of your UI respond to a non-default `textScal
 then `OverrideTextScaleFactor` is the widget for you.
 
 ## Usage
-The package contains single widget `OverrideTextScaleFactor`. 
+The package contains a single widget `OverrideTextScaleFactor`. 
 By default this widget will set `textScaleFactor` to 1.0 but the field can be overridden to any value.
 
 ### Example
