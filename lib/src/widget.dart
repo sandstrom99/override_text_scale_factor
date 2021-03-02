@@ -4,10 +4,9 @@ import 'package:flutter/material.dart';
 class OverrideTextScaleFactor extends StatelessWidget {
   /// Creates a [OverrideTextScaleFactor] widget
   const OverrideTextScaleFactor({
-    @required this.child,
+    required this.child,
     this.textScaleFactor = 1.0,
-  })  : assert(child != null),
-        assert(textScaleFactor != null);
+  });
 
   /// Widget to be used as child
   ///
