@@ -1,19 +1,19 @@
 name: override_text_scale_factor
 description: This package provides a widget that overrides the textScaleFactor given by MediaQuery.
-version: 1.0.0
+version: 1.0.1
 
 homepage: https://github.com/sandstrom99/override_text_scale_factor
 
 environment:
-  sdk: ">=2.12.0-0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.21.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
 dev_dependencies:
-  pedantic: ^1.10.0
+  pedantic: ^1.11.0
   flutter_test:
     sdk: flutter
 

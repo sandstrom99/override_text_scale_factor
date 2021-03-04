@@ -1,3 +1,7 @@
+## [1.0.1] - 02/03/2021
+
+Fixed CHANGELOG ordering
+
 ## [1.0.0] - 02/03/2021
 
 Migrated to Null-Safety
