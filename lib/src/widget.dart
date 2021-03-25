@@ -6,7 +6,8 @@ class OverrideTextScaleFactor extends StatelessWidget {
   const OverrideTextScaleFactor({
     required this.child,
     this.textScaleFactor = 1.0,
-  });
+    Key? key,
+  }) : super(key: key);
 
   /// Widget to be used as child
   ///
@@ -22,6 +23,7 @@ class OverrideTextScaleFactor extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MediaQuery(
+      key: key,
       data: MediaQuery.of(context).copyWith(
         textScaleFactor: textScaleFactor,
       ),
