@@ -1,9 +1,9 @@
-## [1.0.2] - 02/03/2021
+## [1.0.2] - 25/03/2021
 
 * `OverrideTextScaleFactor` now takes an optional key in its constructor
 * Removed `pedantic` dependency
 
-## [1.0.1] - 02/03/2021
+## [1.0.1] - 02/04/2021
 
 * Fixed CHANGELOG ordering
 
