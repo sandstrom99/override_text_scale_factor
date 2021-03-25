@@ -39,7 +39,7 @@ OverrideTextScaleFactor(
 ```
 
 ## Example Project
-Take a look at this [Example Project](https://github.com/sandstrom99/override_text_scale_factor/blob/master/example/lib/main.dart) Project
+Take a look at this [Example Project](https://github.com/sandstrom99/override_text_scale_factor/blob/master/example/lib/example.dart) Project
 
 ## Acknowledgements
 This package is close to useless but I've found myself needing an `OverrideTextScaleFactor` widget and you might too.
